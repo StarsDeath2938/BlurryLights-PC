@@ -1,0 +1,197 @@
+body {
+    /* background-color: #2d2d2d; */
+    height: 100%;
+
+    /* background-image: url("../textures/topBackGround.jpg"); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.globalBox {
+    position: relative;
+    
+    top: 0;
+    left: 0;
+    margin: auto;
+
+    width: 1400px;
+    height: 100%;
+
+    /* background-color: #4b4b4b; */
+    
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 32px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+/* --全局样式-- */
+
+.topGlobalNav {
+    position: absolute;
+
+    width: 1450px;
+    height: 60px;
+
+    top: 20px;
+    left: -25px;
+
+    z-index: 2;
+}
+
+.containerLeft,
+.containerRight {
+
+    height: 60px;
+
+    margin: 0 20px;
+    /* border: 2px solid #a4a4a4; */
+
+    background-color: rgba(75, 75, 75, 0.4);
+    box-shadow: 0 0 12px rgba(75, 75, 75, 0.4);
+    border-radius: 5px;
+
+}
+
+.containerLeft {
+    float: left;
+    width: 350px;
+
+    padding: 0 25px;
+}
+
+.containerRight {
+    float: right;
+    width: 140px;
+    padding: 0 10px;
+}
+
+.containerLeft>ul>li,
+.containerRight>ul>li {
+    float: left;
+
+    margin: 10px 10px;
+    /* border: 2px solid #cdcdcd; */
+
+
+    height: 40px;
+
+    color: #afafaf;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.containerLeft>ul>li {
+    font-size: medium;
+    width: 80px;
+}
+
+.containerRight>ul>li {
+    float: right;
+    font-size: large;
+    width: 40px;
+}
+
+.containerLeft>ul>li>a,
+.containerRight>ul>li>a {
+    color: #afafaf;
+}
+
+.containerLeft>ul>li>a:hover,
+.containerRight>ul>li>a:hover {
+    color: #cdcdcd;
+}
+
+.hiddenImg {
+    position: relative;
+
+}
+
+.topGlobalBox {
+    position: relative;
+
+    /* top: 15px; */
+    left: 0;
+
+    width: 1400px;
+    height: 100%;
+
+    z-index: 1;
+
+    /* box-shadow: 0px 0px 10px 8px #2d2d2d inset; */
+}
+
+.topGlobalTextBox {
+    position: relative;
+
+    margin: auto;
+    padding: 8px;
+    border: 2px solid #AB82FF;
+
+    width: 800px;
+    height: 240px;
+
+    top: 240px;
+    /* left: 100px; */
+
+    font-weight: lighter;
+}
+
+.topGlobalTextBox>p {
+    text-align: center;
+}
+
+.topGlobalTextBoxFirstLine {
+    color: #E6E6FA;
+    text-shadow: 0px 0px 8px #AB82FF;
+    font-size: xx-large;
+    font-family: Arial;
+    letter-spacing: 6px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    margin: 15px auto 30px auto;
+
+}
+
+.topGlobalTextBoxNextLine {
+    margin: 12px auto;
+
+    color: #dcdcdc;
+    font-size: medium;
+    letter-spacing: 2px;
+    font-style: italic;
+    /* text-decoration: underline; */
+
+}
+
+.topGlobalTextLastBox {
+    position: relative;
+
+    margin: auto;
+    padding: 0 25px;
+
+    top: 375px;
+    left: 0px;
+
+    width: 1300px;
+    /* height: 150px; */
+    
+}
+
+.topGlobalTextLastBox>.topGlobalTextLastLine {
+    text-align: center;
+
+    margin: 10px auto;
+
+    color: #cdcdcd;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}

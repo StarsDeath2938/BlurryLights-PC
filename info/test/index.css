@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 600px;
+
+    background-color: #dcdcdc;
+
+    transition: background 1s;
+
+    /* ---清除默认样式--- */
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex: 1;
+    justify-content:center;
+    /* ---子元素水平居中--- */
+}
+
+.main {
+    position: relative;
+    top: -50px;
+    width:300px;
+    height: 300px;
+
+    align-self: center;
+    /* ---垂直居中--- */
+
+    perspective: 1000px;
+    /* ---设定视距--- */
+
+}
+
+.main-box {
+    width: 100%;
+    height: 100%;
+
+    transform:  rotateX(60deg) rotateZ(45deg);
+    /* ---定义视角--- */
+    transform-style: preserve-3d;
+    /* ---保留子元素3D转换--- */
+
+    animation: rolling 10s infinite linear;
+
+}
+
+/* ---各方块各面样式-5 */
+
+.outer {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+.outer>div {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    /* ---定位居中--- */
+
+    background-color: rgba(200, 200, 200, 0.4);
+
+    box-shadow: 0px 0px 2px rgba(200, 200, 200, 0.4);
+
+    /* visibility: hidden; */
+
+    transition: background 1s;
+}
+
+.inner {
+    position: absolute;
+
+    top: 50px;
+    left: 50px;
+
+    width: 200px;
+    height: 200px;
+
+}
+
+.inner>div {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+
+    background-color: rgba(238,238,224,0.5);
+
+    box-shadow: 0px 0px 16px rgba(238,238,224,0.3);
+
+    /* visibility: hidden; */
+
+    transition: background 1s;
+
+}
+
+/* ---各元素旋转--- */
+
+.outer>div:nth-child(1) {
+    transform: translateZ(-100px);
+}
+
+.outer>div:nth-child(2) {
+    transform: translateZ(100px);
+}
+
+.outer>div:nth-child(3) {
+    transform: translateY(100px) rotateX(90deg);
+}
+
+.outer>div:nth-child(4) {
+    transform: translateY(-100px) rotateX(90deg);
+}
+
+.outer>div:nth-child(5) {
+    transform: translateX(100px) rotateY(90deg);
+}
+
+.outer>div:nth-child(6) {
+    transform: translateX(-100px) rotateY(90deg);
+}
+
+/* ---各元素旋转--- */
+
+.inner>div:nth-child(1) {
+    transform: translateZ(-50px);
+}
+
+.inner>div:nth-child(2) {
+    transform: translateZ(50px);
+}
+
+.inner>div:nth-child(3) {
+    transform: translateY(50px) rotateX(90deg);
+}
+
+.inner>div:nth-child(4) {
+    transform: translateY(-50px) rotateX(90deg);
+}
+
+.inner>div:nth-child(5) {
+    transform: translateX(50px) rotateY(90deg);
+}
+
+.inner>div:nth-child(6) {
+    transform: translateX(-50px) rotateY(90deg);
+}
+
+@keyframes rolling {
+    0% {
+        transform: rotateX(60deg) rotateZ(60deg) rotateZ(45deg) translateZ(0px);
+    }
+
+    50% {
+        transform: rotateX(60deg) rotateZ(240deg) rotateZ(45deg) translateZ(30px);
+    }
+
+    100% {
+        transform: rotateX(60deg) rotateZ(420deg) rotateZ(45deg) translateZ(0px);
+    }
+}
+
+.content {
+    position: absolute;
+    align-self: center;
+
+    top: 450px;
+    width: 240px;
+    height: 120px;
+    line-height: 60px;
+
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    color: #4b4b4b;
+}
+
+.content > h1, .content > span {
+    float: left;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+
+    transition: all 2s;
+}
+
+.content > h1 {
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.content > span {
+    font-size: 24px;
+}

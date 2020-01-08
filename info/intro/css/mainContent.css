@@ -1,0 +1,126 @@
+.mainBox {
+    position: relative;
+
+    padding-top: 50px;
+
+    width: 100%;
+    height: auto;
+
+    background-color: #dcdcdc;
+}
+
+.mainContent {
+    position: relative;
+    
+    margin: auto;
+    padding: 20px;
+
+    top: 0;
+    left: 0;
+
+    width: 1170px;
+    height: 100%;
+
+    background-color:#dcdcdc;
+}
+
+.mainContent>div {
+    position: relative;
+
+    margin: 2.5% 1%;
+    padding: 10px 20px;
+
+    width: 98%;
+
+    background-color: #bfbfbf;
+
+}
+
+.mainContent>div>p {
+    text-align: left;
+    text-indent: 32px;
+    font-size: 16px;
+    line-height: 28px;
+
+    color: #6b6b6b;
+}
+
+.mainContent>div>p:nth-of-type(3n+1) {
+    text-indent: 2em;
+}
+
+.mainContent>div>p:nth-of-type(3n+2) {
+    text-indent: 4em;
+}
+
+.mainContent>div>p:nth-of-type(3n+3) {
+    text-indent: 6em;
+}
+
+.mainContent>div>h2 {
+    margin: 20px 10px 0;
+
+    color: #4b4b4b;
+    font-size: 36px;
+}
+
+.Divider {
+    margin: 20px 1%;
+    border: 0px solid transparent;
+    border-top: 1px solid #6b6b6b;
+
+    width: 98%;
+    height: 0;
+
+
+}
+
+.topic-welcome {
+    height: 60px;
+
+}
+
+.mainContent>.topic-welcome>p {
+    line-height: 40px;
+
+}
+
+.topic-welcome>p>a {
+    color: #8d8d8d;
+
+}
+
+.topic-welcome>p>a:hover {
+    color: #4b4b4b;
+
+}
+
+.topic-describe {
+    height: 540px;
+
+}
+
+.topic-rules {
+    height: 300px;
+
+}
+
+.dismiss {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 120px;
+    height: 40px;
+
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    color: #6b6b6b;
+
+    transition: all 2s;
+}
+
+.dismiss:hover {
+    color: #bfbfbf;
+}

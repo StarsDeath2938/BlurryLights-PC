@@ -1,0 +1,250 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.global-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(to bottom, #7A67EE, #8968CD);
+
+    overflow: hidden;
+}
+
+/* ---background-style--- */
+
+.global-background>div {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0px;
+    bottom: -100px;
+
+    background-color: rgba(171, 130, 255, 0.4);
+}
+
+/* ---particular style--- */
+
+/* --- 01 --- */
+
+#particular01 {
+    left: 5%;
+
+    animation: part01 10s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+@keyframes part01 {
+    from {
+        transform: rotate(0deg);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(1080deg);
+        bottom: 100%;
+    }
+}
+
+/* --- 02 --- */
+
+#particular02 {
+    left: 15%;
+
+    animation: part02 8s infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+}
+
+@keyframes part02 {
+    from {
+        transform: rotate(0deg) scale(1.5, 1.5);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(720deg) scale(1.5, 1.5);
+        bottom: 100%;
+    }
+}
+
+/* --- 03 --- */
+
+#particular03 {
+    left: 25%;
+
+    animation: part03 12s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+@keyframes part03 {
+    from {
+        transform: rotate(0deg) scale(1.2, 1.2);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(1080deg) scale(1.2, 1.2);
+        bottom: 100%;
+    }
+}
+
+/* --- 04 --- */
+
+#particular04 {
+    left: 35%;
+
+    animation: part04 9s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+}
+
+@keyframes part04 {
+    from {
+        transform: rotate(0deg) scale(0.9, 0.9);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(720deg) scale(0.9, 0.9);
+        bottom: 100%;
+    }
+}
+
+/* --- 05 --- */
+
+#particular05 {
+    left: 45%;
+
+    animation: part05 11s infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+}
+
+@keyframes part05 {
+    from {
+        transform: rotate(0deg) scale(1.1, 1.1);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(1080deg) scale(1.1, 1.1);
+        bottom: 100%;
+    }
+}
+
+/* --- 06 --- */
+
+#particular06 {
+    left: 55%;
+
+    animation: part06 13s infinite;
+    animation-timing-function: linear;
+    animation-delay: 2.5s;
+}
+
+@keyframes part06 {
+    from {
+        transform: rotate(0deg) scale(1.3, 1.3);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(960deg) scale(1.3, 1.3);
+        bottom: 100%;
+    }
+}
+
+/* --- 07 --- */
+
+#particular07 {
+    left: 65%;
+
+    animation: part07 16s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+}
+
+@keyframes part07 {
+    from {
+        transform: rotate(0deg) scale(1.6, 1.6);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(720deg) scale(1.6, 1.6);
+        bottom: 100%;
+    }
+}
+
+/* --- 08 --- */
+
+#particular08 {
+    left: 75%;
+
+    animation: part08 12s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+@keyframes part08 {
+    from {
+        transform: rotate(0deg) scale(1.2, 1.2);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(960deg) scale(1.2, 1.2);
+        bottom: 100%;
+    }
+}
+
+/* --- 09 --- */
+
+#particular09 {
+    left: 85%;
+
+    animation: part09 9s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+}
+
+@keyframes part09 {
+    from {
+        transform: rotate(0deg) scale(0.8, 0.8);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(1080deg) scale(0.8, 0.8);
+        bottom: 100%;
+    }
+}
+
+/* --- 10 --- */
+
+#particular10 {
+    left: 95%;
+
+    animation: part10 13s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+}
+
+@keyframes part10 {
+    from {
+        transform: rotate(0deg) scale(1.4, 1.4);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(720deg) scale(1.4, 1.4);
+        bottom: 100%;
+    }
+}

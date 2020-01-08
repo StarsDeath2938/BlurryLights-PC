@@ -1,0 +1,167 @@
+.container {
+    position: absolute;
+
+    top: 350px;
+    left: 0px;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: #6b6b6b;
+
+    box-shadow: 0px 0px 12px #4b4b4b;
+
+    z-index: 1;
+}
+
+.navBox {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    margin: 0 15%;
+
+    width: 70%;
+    height: 100%;
+    
+    background-color: #6b6b6b;
+
+}
+
+.navBox-fixed {
+    position: fixed;
+    top: 0;
+
+}
+
+.navBox>li {
+    position: relative;
+    display: inline-block;
+
+    margin: 0 15px;
+
+    width: 110px;
+    height: 100%;
+
+    background-color: #6b6b6b;
+
+}
+
+.navBox>li>a {
+    float: left;
+
+    top: 10px;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    color: #afafaf;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    line-height: 50px;
+
+}
+
+.searchBox {
+    position: absolute;
+    float: right;
+
+    border: 5px solid #6b6b6b;
+
+    top: 0px;
+    right: 240px;
+
+    width: 300px;
+    height: 100%;
+
+    background-color: #6d6d6d;
+
+}
+
+.searchBox-textarea {
+    float: left;
+
+    width: 220px;
+    height: 40px;
+
+    padding: 8px;
+
+    font-size: 16px;
+    color: #6a6a6a;
+    background-color: #afafaf;
+
+}
+
+.searchBox-button {
+    float: right;
+
+    width: 70px;
+    height: 40px;
+
+    font-size: 16px;
+    color: #afafaf;
+    background-color: #6b6b6b;
+
+    transition: all 1s;
+
+}
+
+.searchBox-button:hover {
+    color: #6b6b6b;
+    background-color: #a4a4a4;
+
+}
+
+.hiddenList {
+    position: absolute;
+    display: none;
+
+    border: 1px solid #6b6b6b;
+    border-top: 1px solid #b4b4b4;
+
+    width: 110px;
+    height: 169px;
+
+    top: 50px;
+    left: 0px;
+
+    background-color: #b4b4b4;
+
+    z-index: 1;
+
+}
+
+.hiddenList>li {
+    margin: 5px 0;
+    padding: 2px;
+
+    width: 100%;
+    height: 25px;
+
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 21px;
+
+} 
+
+.hiddenList>li>a {
+    color: #6b6b6b;
+}
+
+.hiddenList>.divider {
+    margin: 2px 0;
+    padding: 0;
+
+    height: 1px;
+    line-height: 0;
+
+    background-color: #6b6b6b;
+}
+
+.hiddenList>li>a:hover {
+    color: #4b4b4b;
+}
